@@ -42,7 +42,9 @@ STATUS:
 # Intro <a name = "Intro"></a>
 Explicação introdutória sobre o App.
 
-Quem desenvolveu este projeto antes, e o que foi acrescentado ou mudou no projeto original
+First: This project was developed using VITE, which is a little different from the original react.
+
+In the Signup file, instead of Link, we use useNavigate() to call the rotes.
 
 <!-- 
 Layout de site responsivo, simples, criado com código html, css e javascript; usando regra de mídia, barra de rolagem, ícone de sanduíche e menu deslizante 

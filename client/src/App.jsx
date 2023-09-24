@@ -1,14 +1,21 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Signup from './componets/Signup';
+import Login from  './componets/Login';
+import {BrowserRouter, Routes, Route } from 'react-router-dom'
 
 function App() {
 
   return (
       <div>
-         <p>Paragrafo Temporário do arquivo App.jsx, enquanto não chega outros códigos</p>
-         <Signup />
+           <BrowserRouter>
+                <Routes>
+                    <Route path='/register' element={<Signup />}></Route>
+                    <Route path='/login' element={<Login />}></Route>
+                </Routes>
+           </BrowserRouter>
+
       </div>
   )
 }
 
-export default App
+export default App;
