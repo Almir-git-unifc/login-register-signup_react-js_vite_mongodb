@@ -14,12 +14,14 @@ STATUS:
                       
 ********* Test the ability of the devabs branch to make commits and pullrequests *****************
 
+********* v3 - Test commits and pullrequests in the face of project restructuring *****************
+
 --------------------------------------------------------------------------------------
 
 
 ![Link de figura1 do App](https://github.com/Almir-git-unifc/xxx1.png)
 
-![Link de figura2 do Apṕ](https://github.com/Almir-git-unifc/xxx2.png)
+![Link de figura2 do App](https://github.com/Almir-git-unifc/xxx2.png)
 
 
 --------------------------------------------------------------------------------------
