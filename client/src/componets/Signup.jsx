@@ -1,9 +1,18 @@
+import { useNavigate } from "react-router-dom";
+import '../App'
 
 function Signup () {
+
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/login");
+  };
+
   return (
     <div
       className='d-flex justify-content-center 
-                 align-items-center bg-secondary vh-100'
+                 align-items-center bg-secondary vh-100' 
     >
       <div className='bg-white p-3 rounded w-25'>
         <h2>Register Signup</h2>
@@ -33,7 +42,7 @@ function Signup () {
               className='form-control rounded-0'
             />
           </div>
-          {/** Linea 34 */}
+      
 
           <div className='mb-3'>
             <label htmlFor='email'>
@@ -46,7 +55,7 @@ function Signup () {
               className='form-control rounded-0'
             />
           </div>
-          {/** Linea 45 */}
+   
 
           <button type='submit' className='btn btn-success w-100 rounded-0'>
             Register
@@ -54,7 +63,12 @@ function Signup () {
         </form>
 
         <p>Already Have an Account </p>
-        <button className='btn btn-default border w-100 bg-light rounded-0 text-decoration-none' >Login</button>
+  
+      <button className='btn btn-default border w-100 bg-light rounded-0 text-decoration-none' onClick={handleClick}>
+          Login
+      </button>
+  
+  
       </div>
     </div>
   )
