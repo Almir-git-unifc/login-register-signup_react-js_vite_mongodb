@@ -28,6 +28,29 @@ mongoose.connect(
 .then((res) => console.log(`Connection Success in DB Cloud ${res}`))
 .catch((err) => console.log(`Error in connection with DataBase MongoDB ${err}`));
 
+
+
+app.post('/login', (req, res) => {
+    const { email, password } = req.body;
+
+    UserCadModel.findOne( { email: email } )
+     .then(registers => {
+           if(registers) {
+                if(registers.password === password) {
+                    res.json('Success')
+                }
+                else {
+                    res.json('Password incorrect')
+                } 
+           }
+           else { 
+              res.json('unregistered user')
+           }
+     } )
+});
+
+
+
 app.post('/register', (req, res) => {
     UserCadModel.create(req.body)
     .then(register => res.json(register))
